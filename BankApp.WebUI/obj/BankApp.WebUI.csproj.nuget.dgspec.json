@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Okan Karakoç\\Documents\\GitHub\\BankApp.Project\\BankApp.WebUI\\BankApp.WebUI.csproj": {}
+    "C:\\Users\\Okan Karakoç\\Documents\\GitHub\\BankApp\\BankApp.WebUI\\BankApp.WebUI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Okan Karakoç\\Documents\\GitHub\\BankApp.Project\\BankApp.WebUI\\BankApp.WebUI.csproj": {
+    "C:\\Users\\Okan Karakoç\\Documents\\GitHub\\BankApp\\BankApp.WebUI\\BankApp.WebUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Okan Karakoç\\Documents\\GitHub\\BankApp.Project\\BankApp.WebUI\\BankApp.WebUI.csproj",
+        "projectUniqueName": "C:\\Users\\Okan Karakoç\\Documents\\GitHub\\BankApp\\BankApp.WebUI\\BankApp.WebUI.csproj",
         "projectName": "BankApp.WebUI",
-        "projectPath": "C:\\Users\\Okan Karakoç\\Documents\\GitHub\\BankApp.Project\\BankApp.WebUI\\BankApp.WebUI.csproj",
+        "projectPath": "C:\\Users\\Okan Karakoç\\Documents\\GitHub\\BankApp\\BankApp.WebUI\\BankApp.WebUI.csproj",
         "packagesPath": "C:\\Users\\Okan Karakoç\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Okan Karakoç\\Documents\\GitHub\\BankApp.Project\\BankApp.WebUI\\obj\\",
+        "outputPath": "C:\\Users\\Okan Karakoç\\Documents\\GitHub\\BankApp\\BankApp.WebUI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -43,6 +43,28 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.17, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

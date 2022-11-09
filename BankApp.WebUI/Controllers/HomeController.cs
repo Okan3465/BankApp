@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using BankApp.WebUI.Data.Context;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,9 +9,16 @@ namespace BankApp.WebUI.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly BankContext _bankContext;
+
+        public HomeController(BankContext bankContext)
+        {
+            _bankContext = bankContext;
+        }
+
         public IActionResult Index()
         {
-            return View();
+            return View(_bankContext.ApplicationUsers.ToList());
         }
     }
 }
